@@ -3,80 +3,56 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 }
 
-section, header {
-  height: 100vh; /* Ocupa toda la altura del viewport */
+/* Estilo del header */
+#home {
+  height: 100vh; /* Ocupa toda la pantalla */
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-/* Estilo del header (Sección principal) */
-#home {
-  background: linear-gradient(135deg, #4CAF50, #388E3C);
+  background: linear-gradient(135deg, #4CAF50, #388E3C); /* Fondo degradado */
   color: white;
 }
 
-#home h1 {
+/* Contenedor principal */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%; /* Ancho del contenido */
+  max-width: 1200px;
+}
+
+/* Sección de texto */
+.text-content {
+  flex: 1; /* Ocupa la mitad del espacio */
+  padding: 20px;
+}
+
+.text-content h1 {
   font-size: 3rem;
   margin: 0;
 }
 
-#home p {
+.text-content p {
   font-size: 1.5rem;
-  margin-top: 0.5rem;
+  margin-top: 10px;
 }
 
-/* Estilo de la sección "Proyectos" */
-#projects {
-  background-color: #f1f1f1;
-  color: #333;
+/* Sección de imagen */
+.image-content {
+  flex: 1; /* Ocupa la otra mitad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#projects h2 {
-  font-size: 2.5rem;
-}
-
-#projects p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* Estilo de la sección "Habilidades" */
-#skills {
-  background-color: #eaf8e6;
-  color: #4CAF50;
-}
-
-#skills h2 {
-  font-size: 2.5rem;
-}
-
-#skills p {
-  font-size: 1.2rem;
-}
-
-/* Estilo de la sección "Contacto" */
-#contact {
-  background-color: #333;
-  color: white;
-}
-
-#contact h2 {
-  font-size: 2.5rem;
-}
-
-#contact p {
-  font-size: 1.2rem;
-}
-
-#contact a {
-  color: #4CAF50;
-  text-decoration: none;
-}
-
-#contact a:hover {
-  color: #FFD700;
+.image-content img {
+  width: 300px; /* Tamaño de la imagen */
+  height: 300px;
+  object-fit: cover; /* Ajusta la imagen */
+  border-radius: 50%; /* Hace la imagen redonda */
+  border: 5px solid white; /* Borde blanco */
 }
