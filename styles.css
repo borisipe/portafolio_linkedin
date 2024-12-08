@@ -21,6 +21,9 @@ body {
     color: #fff;
     text-decoration: none;
   }
+  nav ul li .li-skills{
+    list-style-position: inside;
+  }
   section {
     padding: 2rem;
     text-align: center;
