@@ -1,140 +1,82 @@
 /* Estilos generales */
 body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4; /* Fondo claro */
-  color: #333; /* Texto principal */
 }
 
-/* Estilo del header y navegación */
-header {
-  background-color: #4CAF50; /* Verde */
-  padding: 1rem;
-  text-align: center;
-  color: #fff;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+section, header {
+  height: 100vh; /* Ocupa toda la altura del viewport */
   display: flex;
   justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #FFD700; /* Dorado */
-}
-
-/* Sección "Sobre mí" */
-#about {
-  background-color: #f9f9f9; /* Fondo gris claro */
-  padding: 2rem;
+  align-items: center;
   text-align: center;
 }
 
-#about h1 {
-  color: #4CAF50; /* Verde */
+/* Estilo del header (Sección principal) */
+#home {
+  background: linear-gradient(135deg, #4CAF50, #388E3C);
+  color: white;
 }
 
-#about p {
-  font-size: 1.2rem;
-  color: #555; /* Gris oscuro */
+#home h1 {
+  font-size: 3rem;
+  margin: 0;
 }
 
-/* Sección de proyectos */
+#home p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Estilo de la sección "Proyectos" */
 #projects {
-  background-color: #fff;
-  padding: 2rem;
-}
-
-#projects h2 {
-  color: #4CAF50;
-  text-align: center;
-}
-
-.project {
-  background-color: #f1f1f1; /* Gris suave */
-  padding: 1rem;
-  margin: 1rem auto;
-  border-radius: 5px;
-  max-width: 600px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
+  background-color: #f1f1f1;
   color: #333;
 }
 
-.project a {
-  color: #4CAF50;
-  text-decoration: none;
-  margin-right: 10px;
-  transition: color 0.3s;
+#projects h2 {
+  font-size: 2.5rem;
 }
 
-.project a:hover {
-  color: #FF4500; /* Naranja */
+#projects p {
+  font-size: 1.2rem;
+  color: #666;
 }
 
-/* Sección de habilidades */
+/* Estilo de la sección "Habilidades" */
 #skills {
-  background-color: #eaf8e6; /* Verde muy claro */
-  padding: 2rem;
+  background-color: #eaf8e6;
+  color: #4CAF50;
 }
 
 #skills h2 {
-  color: #4CAF50;
-  text-align: center;
+  font-size: 2.5rem;
 }
 
-#skills ul {
-  list-style: none;
-  padding: 0;
-  text-align: center;
+#skills p {
+  font-size: 1.2rem;
 }
 
-#skills ul li {
-  margin: 0.5rem 0;
-  font-weight: bold;
-}
-
-/* Sección de contacto */
+/* Estilo de la sección "Contacto" */
 #contact {
-  background-color: #fff;
-  padding: 2rem;
-  text-align: center;
+  background-color: #333;
+  color: white;
 }
 
 #contact h2 {
-  color: #4CAF50;
+  font-size: 2.5rem;
 }
 
-#contact p a {
+#contact p {
+  font-size: 1.2rem;
+}
+
+#contact a {
   color: #4CAF50;
   text-decoration: none;
 }
 
-#contact p a:hover {
-  color: #FF4500;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
+#contact a:hover {
+  color: #FFD700;
 }
